@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maisha Khatun | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<!-- LOADER -->
+<div class="loader" id="loader">
+    <div class="loader-box">
+        <div class="loader-logo"><span>MA</span>IS<span>HA</span></div>
+        <div class="loader-bar"><div class="loader-fill"></div></div>
+        <p class="loader-text"><i class="fa-solid fa-code"></i> Loading Portfolio…</p>
+    </div>
+</div>
+
+<!-- NOISE -->
+<div class="noise"></div>
+<!-- BLOBS -->
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+<div class="blob blob3"></div>
+<!-- GRID OVERLAY -->
+<div class="grid-overlay"></div>
+<!-- PARTICLES -->
+<canvas id="canvas"></canvas>
+
+<!-- ══════════ NAV ══════════ -->
+<nav id="nav">
+    <div class="container nav-wrap">
+        <a href="#home" class="logo">
+            <span class="logo-bracket">&lt;</span><span>MA</span>IS<span>HA</span><span class="logo-bracket">/&gt;</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+            <li><a href="#experience"><i class="fa-solid fa-code"></i> Skills</a></li>
+            <li><a href="#certificates"><i class="fa-solid fa-certificate"></i> Certificates</a></li>
+            <li><a href="#projects"><i class="fa-solid fa-folder-open"></i> Projects</a></li>
+            <li><a href="#contact" class="nav-cta"><i class="fa-solid fa-paper-plane"></i> Contact Me</a></li>
+        </ul>
+        <button class="burger" id="burger">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- ══════════ HERO ══════════ -->
+<header id="home">
+    <div class="container hero-wrap">
+
+        <div class="hero-left">
+            <div class="badge-tag"><i class="fa-solid fa-circle-dot pulse-dot"></i> Available for work</div>
+            <p class="hero-sub">Hello, I'm</p>
+            <h1 class="hero-name">MAISHA<span>KHATUN</span></h1>
+            <div class="hero-role">
+                <i class="fa-solid fa-terminal role-icon"></i>
+                <span id="typewriter"></span><span class="blink">_</span>
+            </div>
+            <p class="hero-desc">
+                Crafting responsive and user-friendly web applications using modern full-stack technologies like React.js, Node.js, Express.js, and MongoDB. Passionate about building scalable systems, writing clean code, and continuously improving software quality through strong fundamentals in computer science and database systems.
+            </p>
+
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-num" data-count="1">0</span><span class="stat-plus">+</span>
+                    <p>Years Exp.</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num" data-count="5">0</span><span class="stat-plus">+</span>
+                    <p>Projects</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num" data-count="1">0</span><span class="stat-plus">+</span>
+                    <p>Clients</p>
+                </div>
+            </div>
+
+            <div class="hero-btns">
+                <a href="https://drive.google.com/file/d/1AlONbSTljLXmStX2aXVbJJmTa2iZYfTn/view?usp=sharing" class="btn btn-glow" download>
+                    <i class="fa-solid fa-file-arrow-down"></i> Download CV
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fa-solid fa-comments"></i> Let's Talk
+                </a>
+            </div>
+
+            <div class="hero-socials">
+                <a href="https://github.com/maishakhatun516-maker" target="_blank" class="soc-btn" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/share/18qpYbsRtb/" target="_blank" class="soc-btn" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/share/18qpYbsRtb/" target="_blank" class="soc-btn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:maishakhatun516@gmail.com" class="soc-btn" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <div class="photo-frame">
+                <div class="photo-glow"></div>
+                <img src="maisha .jpg" alt="Maisha's pic" class="photo-img">
+                <div class="orbit orbit1"><div class="orbit-dot o-react"><i class="fa-brands fa-react"></i></div></div>
+                <div class="orbit orbit2"><div class="orbit-dot o-node"><i class="fa-solid fa-laptop-code"></i></div></div>
+                <div class="orbit orbit3"><div class="orbit-dot o-js"><i class="fa-brands fa-js"></i></div></div>
+                <div class="float-tag ftag1"><i class="fa-brands fa-html5"></i> HTML5</div>
+                <div class="float-tag ftag2"><i class="fa-solid fa-code"></i> Developer</div>
+            </div>
+        </div>
+
+    </div>
+    <a href="#about" class="hero-scroll"><i class="fa-solid fa-angles-down"></i><span>Scroll</span></a>
+</header>
+
+<!-- ══════════ ABOUT ══════════ -->
+<section id="about">
+    <div class="sec-tag"><i class="fa-solid fa-user-tie"></i> About</div>
+    <p class="sec-label reveal">Get To Know More</p>
+    <h2 class="sec-title reveal">About <span>Me</span></h2>
+
+    <div class="container about-wrap">
+        <div class="about-img-col reveal-left">
+            <div class="about-img-frame">
+                <img src="maisha .jpg" alt="About Photo">
+                <div class="img-corner tl"></div>
+                <div class="img-corner br"></div>
+                <div class="exp-badge-float">
+                    <i class="fa-solid fa-award"></i>
+                    <div><strong>1+</strong><span>Years</span></div>
+                </div>
+                <div class="img-dot-grid"></div>
+            </div>
+        </div>
+
+        <div class="about-info reveal-right">
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="info-icon-wrap"><i class="fa-solid fa-briefcase"></i></div>
+                    <div><h4>Experience</h4><p>1+ Years Front-End & UI Design</p></div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon-wrap"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div><h4>Education</h4><p>BSc in ICT — IIT, JU</p></div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon-wrap"><i class="fa-solid fa-location-dot"></i></div>
+                    <div><h4>Location</h4><p>Savar, Dhaka 🇧🇩</p></div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon-wrap"><i class="fa-solid fa-language"></i></div>
+                    <div><h4>Languages</h4><p>Bengali, English</p></div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon-wrap"><i class="fa-solid fa-code"></i></div>
+                    <div><h4>Full Stack Developer</h4><p>Web & App Development</p></div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon-wrap"><i class="fa-solid fa-users-gear"></i></div>
+                    <div><h4>Head of IT</h4><p>JU Science Club</p></div>
+                </div>
+            </div>
+
+            <p class="about-bio">
+                I'm a passionate <strong>Full-Stack Developer</strong> specializing in building scalable, responsive, and user-friendly web applications using modern technologies like React.js, Node.js, Express.js, and MongoDB. I also have a strong foundation in Core Computer Science including Data Structures, OOP, and Database Systems. Alongside development, I am continuously exploring <strong>secure coding practices</strong> and system design to build reliable digital products.
+            </p>
+
+            <div class="about-tags">
+                <span><i class="fa-solid fa-check-circle"></i> Full-Stack Developer</span>
+                <span><i class="fa-solid fa-check-circle"></i> Clean Code Enthusiast</span>
+                <span><i class="fa-solid fa-check-circle"></i> Problem Solver</span>
+                <span><i class="fa-solid fa-check-circle"></i> Team Leadership</span>
+                <span><i class="fa-solid fa-check-circle"></i> Database Design</span>
+                <span><i class="fa-solid fa-check-circle"></i> Security Aware Developer</span>
+            </div>
+
+            <a href="https://drive.google.com/file/d/1AlONbSTljLXmStX2aXVbJJmTa2iZYfTn/view?usp=sharing" class="btn btn-glow" download style="margin-top:1.5rem;display:inline-flex;">
+                <i class="fa-solid fa-file-arrow-down"></i> Download CV
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════ SKILLS ══════════ -->
+<div id="experience">
+    <div class="sec-tag"><i class="fa-solid fa-code"></i> Skills</div>
+    <p class="sec-label reveal">Explore My</p>
+    <h2 class="sec-title reveal">Tech <span>Stack</span></h2>
+
+    <div class="container skills-grid">
+
+        <!-- Frontend -->
+        <div class="skill-box reveal-left">
+            <div class="skill-box-head"><i class="fa-solid fa-paintbrush"></i> Frontend</div>
+            <div class="pills">
+                <div class="pill"><i class="fa-brands fa-html5 html-c"></i><div><b>HTML5</b><small>Expert</small></div></div>
+                <div class="pill"><i class="fa-brands fa-css3-alt css-c"></i><div><b>CSS3</b><small>Expert</small></div></div>
+                <div class="pill"><i class="fa-brands fa-js js-c"></i><div><b>JavaScript</b><small>Advanced</small></div></div>
+                <div class="pill"><i class="fa-brands fa-react react-c"></i><div><b>React.js</b><small>Intermediate</small></div></div>
+                <div class="pill"><i class="fa-solid fa-wind tail-c"></i><div><b>Tailwind CSS</b><small>Advanced</small></div></div>
+                <div class="pill"><i class="fa-solid fa-wand-magic-sparkles framer-c"></i><div><b>Framer Motion</b><small>Intermediate</small></div></div>
+            </div>
+        </div>
+
+        <!-- Backend & Database -->
+        <div class="skill-box reveal-right">
+            <div class="skill-box-head"><i class="fa-solid fa-server"></i> Backend & Database</div>
+            <div class="pills">
+                <div class="pill"><i class="fa-brands fa-node-js node-c"></i><div><b>Node.js</b><small>Intermediate</small></div></div>
+                <div class="pill"><i class="fa-brands fa-node-js express-c"></i><div><b>Express.js</b><small>Intermediate</small></div></div>
+                <div class="pill"><i class="fa-solid fa-database mongo-c"></i><div><b>MongoDB</b><small>Intermediate</small></div></div>
+                <div class="pill"><i class="fa-solid fa-database mysql-c"></i><div><b>MySQL</b><small>Intermediate</small></div></div>
+                <div class="pill"><i class="fa-solid fa-code java-c"></i><div><b>Java</b><small>Intermediate</small></div></div>
+                <div class="pill"><i class="fa-brands fa-python py-c"></i><div><b>Python</b><small>Basic</small></div></div>
+            </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-box reveal-left">
+            <div class="skill-box-head"><i class="fa-solid fa-screwdriver-wrench"></i> Tools & Platforms</div>
+            <div class="pills">
+                <div class="pill"><i class="fa-brands fa-git-alt git-c"></i><div><b>Git</b><small>Expert</small></div></div>
+                <div class="pill"><i class="fa-brands fa-github gh-c"></i><div><b>GitHub</b><small>Expert</small></div></div>
+                <div class="pill"><i class="fa-solid fa-terminal term-c"></i><div><b>Linux</b><small>Intermediate</small></div></div>
+                <div class="pill"><i class="fa-solid fa-code vsc-c"></i><div><b>VS Code</b><small>Expert</small></div></div>
+                <div class="pill"><i class="fa-solid fa-paper-plane post-c"></i><div><b>Postman</b><small>Intermediate</small></div></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container prog-section reveal">
+        <h3 class="prog-title"><i class="fa-solid fa-chart-simple"></i> Proficiency</h3>
+        <div class="prog-item" data-pct="90">
+            <div class="prog-label"><i class="fa-brands fa-html5"></i> HTML / CSS <span>0%</span></div>
+            <div class="prog-track"><div class="prog-fill"></div></div>
+        </div>
+        <div class="prog-item" data-pct="85">
+            <div class="prog-label"><i class="fa-brands fa-js"></i> JavaScript (ES6) <span>0%</span></div>
+            <div class="prog-track"><div class="prog-fill"></div></div>
+        </div>
+        <div class="prog-item" data-pct="80">
+            <div class="prog-label"><i class="fa-brands fa-react"></i> React.js <span>0%</span></div>
+            <div class="prog-track"><div class="prog-fill"></div></div>
+        </div>
+        <div class="prog-item" data-pct="78">
+            <div class="prog-label"><i class="fa-brands fa-node-js"></i> Node.js / Express.js <span>0%</span></div>
+            <div class="prog-track"><div class="prog-fill"></div></div>
+        </div>
+        <div class="prog-item" data-pct="75">
+            <div class="prog-label"><i class="fa-solid fa-database"></i> MongoDB / MySQL <span>0%</span></div>
+            <div class="prog-track"><div class="prog-fill"></div></div>
+        </div>
+        <div class="prog-item" data-pct="70">
+            <div class="prog-label"><i class="fa-solid fa-code"></i> Java / Python <span>0%</span></div>
+            <div class="prog-track"><div class="prog-fill"></div></div>
+        </div>
+    </div>
+</div>
+
+<!-- ══════════ CERTIFICATES ══════════ -->
+<section id="certificates">
+    <div class="sec-tag"><i class="fa-solid fa-certificate"></i> Certificates</div>
+    <p class="sec-label reveal">My Achievements</p>
+    <h2 class="sec-title reveal">Verified <span>Certificates</span></h2>
+
+    <div class="container cert-grid">
+        <div class="cert-card" onclick="openCert('Basic and First Aid Training .jpg')">
+            <img src="Basic and First Aid Training .jpg" alt="">
+            <div class="cert-info"><h4>Basic & First Aid Training</h4></div>
+        </div>
+        <div class="cert-card" onclick="openCert('Coordinate of IT-RCY.jpg')">
+            <img src="Coordinate of IT-RCY.jpg" alt="">
+            <div class="cert-info"><h4>IT Coordination (RCY)</h4></div>
+        </div>
+        <div class="cert-card" onclick="openCert('LinkedIn .png')">
+            <img src="LinkedIn .png" alt="">
+            <div class="cert-info"><h4>LinkedIn Optimization</h4></div>
+        </div>
+        <div class="cert-card" onclick="openCert('Marathon 10km.jpg')">
+            <img src="Marathon 10km.jpg" alt="">
+            <div class="cert-info"><h4>JUCSU 10km Marathon</h4></div>
+        </div>
+        <div class="cert-card" onclick="openCert('High_Jump.jpg')">
+            <img src="High_Jump.jpg" alt="">
+            <div class="cert-info"><h4>University Annual Sports</h4></div>
+        </div>
+        <div class="cert-card" onclick="openCert('Product Bootcamp.png')">
+            <img src="Product Bootcamp.png" alt="">
+            <div class="cert-info"><h4>Product Bootcamp</h4></div>
+        </div>
+        <div class="cert-card" onclick="openCert('R programming .jpg')">
+            <img src="R programming .jpg" alt="">
+            <div class="cert-info"><h4>R Programming</h4></div>
+        </div>
+        <div class="cert-card" onclick="openCert('Research Seminar.jpg')">
+            <img src="Research Seminar.jpg" alt="">
+            <div class="cert-info"><h4>Research Seminar</h4></div>
+        </div>
+        <div class="cert-card" onclick="openCert('Y-Adapt Training .jpg')">
+            <img src="Y-Adapt Training .jpg" alt="">
+            <div class="cert-info"><h4>Y-Adapt Training</h4></div>
+        </div>
+        <div class="cert-card" onclick="openCert('Marathon_7.36KM (1).jpg')">
+            <img src="Marathon_7.36KM (1).jpg">
+            <div class="cert-info"><h4>Marathon 7.36KM</h4></div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Timeline -->
+<div class="container cyber-timeline reveal" style="margin-top:3rem;">
+    <h3 class="prog-title"><i class="fa-solid fa-timeline"></i> Experience & Activities</h3>
+    <div class="timeline">
+        <div class="tl-item">
+            <div class="tl-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="tl-body">
+                <div class="tl-header">
+                    <h4>Head of IT</h4>
+                    <span class="tl-badge">JU Science Club</span>
+                </div>
+                <p class="tl-org"><i class="fa-solid fa-building"></i> Jahangirnagar University Science Club</p>
+                <ul class="tl-list">
+                    <li><i class="fa-solid fa-chevron-right"></i> Leading IT-related activities and technical coordination</li>
+                    <li><i class="fa-solid fa-chevron-right"></i> Supporting club events and digital operations</li>
+                    <li><i class="fa-solid fa-chevron-right"></i> Managing communication and technical support systems</li>
+                </ul>
+            </div>
+        </div>
+        <div class="tl-item">
+            <div class="tl-icon"><i class="fa-solid fa-network-wired"></i></div>
+            <div class="tl-body">
+                <div class="tl-header">
+                    <h4>IT Coordinator</h4>
+                    <span class="tl-badge">RCY</span>
+                </div>
+                <p class="tl-org"><i class="fa-solid fa-building"></i> RCY Organization</p>
+                <ul class="tl-list">
+                    <li><i class="fa-solid fa-chevron-right"></i> Assisted in IT coordination and event support</li>
+                    <li><i class="fa-solid fa-chevron-right"></i> Helped manage online communication and digital tasks</li>
+                </ul>
+            </div>
+        </div>
+        <div class="tl-item">
+            <div class="tl-icon"><i class="fa-solid fa-university"></i></div>
+            <div class="tl-body">
+                <div class="tl-header">
+                    <h4>B.Sc. in Information & Communication Technology</h4>
+                    <span class="tl-badge">2023 – 2027</span>
+                </div>
+                <p class="tl-org"><i class="fa-solid fa-building-columns"></i> IIT, Jahangirnagar University</p>
+                <ul class="tl-list">
+                    <li><i class="fa-solid fa-chevron-right"></i> CGPA: 3.62 / 4.00</li>
+                    <li><i class="fa-solid fa-chevron-right"></i> Studying Data Structures, OOP, DBMS, and Algorithms</li>
+                    <li><i class="fa-solid fa-chevron-right"></i> Focused on Software Development & Web Technologies</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Interests -->
+<div class="container reveal" style="margin-top:2.5rem;">
+    <h3 class="prog-title"><i class="fa-solid fa-heart-pulse"></i> Interests & Focus Areas</h3>
+    <div class="interest-grid">
+        <div class="interest-card">
+            <div class="int-icon"><i class="fa-solid fa-code"></i></div>
+            <h5>Web Development</h5>
+            <p>Building modern full-stack web applications</p>
+        </div>
+        <div class="interest-card">
+            <div class="int-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <h5>Software Engineering</h5>
+            <p>Clean architecture & scalable system design</p>
+        </div>
+        <div class="interest-card">
+            <div class="int-icon"><i class="fa-solid fa-database"></i></div>
+            <h5>Database Systems</h5>
+            <p>MySQL & MongoDB data modeling and optimization</p>
+        </div>
+        <div class="interest-card">
+            <div class="int-icon"><i class="fa-solid fa-brain"></i></div>
+            <h5>Problem Solving</h5>
+            <p>Data structures, algorithms & logic building</p>
+        </div>
+        <div class="interest-card">
+            <div class="int-icon"><i class="fa-solid fa-paintbrush"></i></div>
+            <h5>UI / UX Design</h5>
+            <p>Designing clean and user-friendly interfaces</p>
+        </div>
+        <div class="interest-card">
+            <div class="int-icon"><i class="fa-solid fa-rocket"></i></div>
+            <h5>Tech Exploration</h5>
+            <p>Learning new frameworks and modern tools</p>
+        </div>
+    </div>
+</div>
+
+<!-- ══════════ PROJECTS ══════════ -->
+<section id="projects">
+    <div class="sec-tag"><i class="fa-solid fa-folder-open"></i> Work</div>
+    <p class="sec-label reveal">Browse My Recent</p>
+    <h2 class="sec-title reveal">Featured <span>Projects</span></h2>
+
+    <div class="container proj-grid">
+
+        <!-- Project 1: Student Management System -->
+        <article class="proj-card reveal" style="--d:0s">
+            <div class="proj-img-wrap">
+                <div class="proj-img-placeholder p1">
+                    <i class="fa-solid fa-user-graduate"></i>
+                </div>
+                <div class="proj-overlay">
+                    <p>A complete student management system with course enrollment, grade tracking, and admin dashboard built with Java and MySQL.</p>
+                    <div class="tech-chips">
+                        <span><i class="fa-solid fa-code"></i> Java</span>
+                        <span><i class="fa-solid fa-database"></i> MySQL</span>
+                        <span><i class="fa-solid fa-window-maximize"></i> Swing</span>
+                    </div>
+                </div>
+                <div class="proj-num">01</div>
+            </div>
+            <div class="proj-body">
+                <h3><i class="fa-solid fa-user-graduate"></i> Student Management System</h3>
+                <p>Full-featured system for managing student records, courses, grades and attendance with role-based access control.</p>
+                <div class="proj-links">
+                    <a href="https://github.com/maishakhatun516-maker" target="_blank" class="plink"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a href="#" class="plink plink-live"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Project 2: JU Hall Management System -->
+        <article class="proj-card reveal" style="--d:.12s">
+            <div class="proj-img-wrap">
+                <div class="proj-img-placeholder p2">
+                    <i class="fa-solid fa-building-columns"></i>
+                </div>
+                <div class="proj-overlay">
+                    <p>A hall management system for Jahangirnagar University — handles room allocation, student records, and complaint tracking.</p>
+                    <div class="tech-chips">
+                        <span><i class="fa-brands fa-react"></i> React</span>
+                        <span><i class="fa-brands fa-node-js"></i> Node</span>
+                        <span><i class="fa-solid fa-database"></i> MongoDB</span>
+                    </div>
+                </div>
+                <div class="proj-num">02</div>
+            </div>
+            <div class="proj-body">
+                <h3><i class="fa-solid fa-building-columns"></i> JU Hall Management System</h3>
+                <p>Web-based system for university hall administration — room booking, student allocation, and complaint management portal.</p>
+                <div class="proj-links">
+                    <a href="https://github.com/maishakhatun516-maker" target="_blank" class="plink"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a href="#" class="plink plink-live"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<!-- ══════════ CONTACT ══════════ -->
+<section id="contact">
+    <div class="sec-tag"><i class="fa-solid fa-satellite-dish"></i> Contact</div>
+    <p class="sec-label reveal">Get In Touch</p>
+    <h2 class="sec-title reveal">Contact <span>Me</span></h2>
+
+    <div class="container contact-wrap">
+
+        <!-- LEFT SIDE -->
+        <div class="contact-left reveal-left">
+            <p class="contact-intro">
+                <i class="fa-solid fa-quote-left qt"></i>
+                I am always open to discussing web development projects, collaborations, or academic opportunities. Let's build something meaningful and impactful together.
+            </p>
+
+            <div class="cmethods">
+                <a href="mailto:maishakhatun516@gmail.com" class="cmethod">
+                    <div class="cm-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="cm-text">
+                        <h5>Email</h5>
+                        <p>maishakhatun516@gmail.com</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-right cm-arr"></i>
+                </a>
+                <a href="https://www.facebook.com/share/18qpYbsRtb/" target="_blank" class="cmethod">
+                    <div class="cm-icon li"><i class="fa-brands fa-facebook-f"></i></div>
+                    <div class="cm-text">
+                        <h5>Facebook</h5>
+                        <p>Connect with me</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-right cm-arr"></i>
+                </a>
+                <a href="https://github.com/maishakhatun516-maker" target="_blank" class="cmethod">
+                    <div class="cm-icon gh"><i class="fa-brands fa-github"></i></div>
+                    <div class="cm-text">
+                        <h5>GitHub</h5>
+                        <p>View my projects</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-right cm-arr"></i>
+                </a>
+                <a href="#" class="cmethod">
+                    <div class="cm-icon wa"><i class="fa-brands fa-whatsapp"></i></div>
+                    <div class="cm-text">
+                        <h5>WhatsApp:+8801303-692235</h5>
+                        <p>Quick chat available</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-right cm-arr"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- FORM -->
+        <form class="contact-form reveal-right" id="contactForm" novalidate>
+
+            <div class="form-row">
+                <div class="form-field">
+                    <label><i class="fa-solid fa-user"></i> Name</label>
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-field">
+                    <label><i class="fa-solid fa-envelope"></i> Email</label>
+                    <input type="email" placeholder="your@email.com" required>
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label><i class="fa-solid fa-tag"></i> Subject</label>
+                <input type="text" placeholder="Project / Collaboration">
+            </div>
+
+            <div class="form-field">
+                <label><i class="fa-solid fa-message"></i> Message</label>
+                <textarea rows="5" placeholder="Write your message…" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-glow submit-btn">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+
+            <div class="form-ok" id="formOk">
+                <i class="fa-solid fa-circle-check"></i> Message sent successfully!
+            </div>
+
+        </form>
+
+    </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+    <div class="foot-inner container">
+        <div class="foot-top">
+            <a href="#home" class="foot-logo">
+                <span class="logo-bracket">&lt;</span><span>MAISHA</span><span></span><span class="logo-bracket">/&gt;</span>
+            </a>
+            <nav class="foot-nav">
+                <a href="#home"><i class="fa-solid fa-house"></i></a>
+                <a href="#about"><i class="fa-solid fa-user"></i></a>
+                <a href="#experience"><i class="fa-solid fa-code"></i></a>
+                <a href="#projects"><i class="fa-solid fa-folder-open"></i></a>
+                <a href="#contact"><i class="fa-solid fa-paper-plane"></i></a>
+            </nav>
+            <div class="foot-socials">
+                <a href="https://github.com/maishakhatun516-maker" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/share/18qpYbsRtb/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/share/18qpYbsRtb/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:maishakhatun516@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="foot-line"></div>
+        <div class="foot-bottom">
+            <p>
+                <i class="fa-regular fa-copyright"></i>
+                2025 <span>MAISHA KHATUN</span>. All rights reserved.
+            </p>
+            <a href="#home" class="back-top">
+                <i class="fa-solid fa-rocket"></i> Back to top
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
